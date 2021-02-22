@@ -205,6 +205,12 @@ public class MainGeometrierechner {
 			else if ((figur.isEmpty())) {
 				continue;
 			}
+			else if (figur.equalsIgnoreCase("Exit")) {
+				System.out.println("Vielen Dank für ihre Zeit");
+				System.exit(0);
+			
+				}
+			
 			else {
 				System.out.println(
 						"Dies ist keine gültige Figur.Bitte versuchen sie es erneut. (rechtwinkliges Dreieck, Quadrat, Kreis, Raute, Trapez, Würfel, Pyramide, Kugel, Zylinder, Kegel.");
