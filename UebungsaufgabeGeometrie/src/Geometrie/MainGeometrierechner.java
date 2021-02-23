@@ -46,7 +46,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut");
 					}
 				}
-				Dreieck deck1 = new Dreieck(dHöhe, dGrundfläche);
+				InterfaceFlaeche deck1 = new Dreieck(dHöhe, dGrundfläche);
 				System.out.println("Das Dreieck hat eine Gesamtfläche von:" + deck1.calcFlächeninhalt());
 				System.out.println("Das Dreieck hat einen Umfang von:" + deck1.calcUmfang());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -78,7 +78,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut");
 					}
 				}
-				Viereck vier1 = new Viereck(seiteB, seiteA);
+				InterfaceFlaeche vier1 = new Viereck(seiteB, seiteA);
 				System.out.println("Das Viereck hat eine Gesamtfläche von:" + vier1.calcFlächeninhalt());
 				System.out.println("Das Viereck hat einen Umfang von:" + vier1.calcUmfang());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -96,7 +96,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut.");
 					}
 				}
-				Kreis circle1 = new Kreis(radius);
+				InterfaceFlaeche circle1 = new Kreis(radius);
 				System.out.println("Der Kreis hat eine Gesamtfläche von:" + circle1.calcFlächeninhalt());
 				System.out.println("Der Kreis hat einen Umfang von:" + circle1.calcUmfang());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -114,7 +114,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut.");
 					}
 				}
-				Würfel würfel1 = new Würfel(seiteA);
+				InterfaceKoerper würfel1 = new Würfel(seiteA);
 				System.out.println("Der Würfel hat eine Volumen von:" + würfel1.calcVolumen());
 				System.out.println("Der Würfel hat eineb Oberflächeninhalt von:" + würfel1.calcOberfläche());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -132,7 +132,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut.");
 					}
 				}
-				Kugel kugel1 = new Kugel(kRadius);
+				InterfaceKoerper kugel1 = new Kugel(kRadius);
 				System.out.println("Die Kugel hat ein Gesamtvolumen von: " + kugel1.calcVolumen());
 				System.out.println("Die Kugel hat einen Oberfläscheninhalt von:" + kugel1.calcOberfläche());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -164,7 +164,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut");
 					}
 				}
-				Zylinder zylinder1 = new Zylinder(zHöhe, zRadius);
+				InterfaceKoerper zylinder1 = new Zylinder(zHöhe, zRadius);
 				System.out.println("Der Zylinder hat ein Volumen von: " + zylinder1.calcVolumen());
 				System.out.println("Der Zylinder hat einen Oberflächeninhalt von: :" + zylinder1.calcOberfläche());
 				System.out.println("My hat's off to you! Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");
@@ -197,7 +197,7 @@ public class MainGeometrierechner {
 						System.out.println("Das ist leider Keine gültilge Zahl. Versuchen Sie es erneut");
 					}
 				}
-				Kegel kegel1 = new Kegel(dHöhe, kRadius);
+				InterfaceKoerper kegel1 = new Kegel(dHöhe, kRadius);
 				System.out.println("Der Kegel hat ein Volumen von: " + kegel1.calcVolumen());
 				System.out.println("Der Kegel hat einen Oberflächeninhalt von: :" + kegel1.calcOberfläche());
 				System.out.println("Geben sie eine weitere Figur an (Kegel, Zylinder, Würfel, Kugel, Kreis, Viereck, rechtwinkliges Dreieck) oder verlassen Sie das Programm mit \"Exit\".");

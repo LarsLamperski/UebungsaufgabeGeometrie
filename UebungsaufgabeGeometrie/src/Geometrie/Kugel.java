@@ -2,6 +2,7 @@ package Geometrie;
 
 public class Kugel implements InterfaceKoerper {
 
+	
 	private double radius;
 
 	public Kugel(double x) {
